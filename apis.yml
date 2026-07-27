@@ -1,8 +1,24 @@
 aid: gtctowers
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/gtctowers.png
 name: Gtctowers
-description: 'Gtctowers is a company surfaced as a portfolio company of norwest-venture-partners and added
-  to the API Evangelist network as a stub for enrichment. Sector: unknown. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'GTC Towers is a telecommunications infrastructure company based in Ponte Vedra Beach, Florida,
+  positioning itself as a customer-focused tower owner built by a team of wireless industry veterans. It
+  develops and operates digital connectivity infrastructure including cell towers, small cells, and in-building
+  wireless systems, alongside tower operations management, tower safety services, and Eco Power Wheels power
+  solutions. GTC Towers leases tower space and supports carriers and enterprises through the various stages
+  of tower siting, deployment, and growth. As of this enrichment pass the company publishes a corporate
+  marketing website only, with no developer portal, API, or programmatic surface.'
 url: https://raw.githubusercontent.com/api-evangelist/gtctowers/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +28,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+x-sector: Telecommunications Infrastructure
 tags:
 - Company
-- Unknown
+- Telecommunications
+- Wireless Infrastructure
+- Cell Towers
+- Small Cells
+- In-Building Wireless
+- Connectivity
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +45,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/gtctowers-domain-security.yml
 - type: Website
   url: https://gtctowers.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
